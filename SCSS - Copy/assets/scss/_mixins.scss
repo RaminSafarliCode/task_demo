@@ -1,0 +1,46 @@
+@import "./variables";
+
+@mixin flexBox($align-items: center, $justify-content: center) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+@mixin linkStyle($text-dec: none) {
+  text-decoration: $text-dec;
+  color: black;
+  font-size: 15px;
+}
+
+@mixin under601Px() {
+  @media only screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin under993Px() {
+  @media only screen and (max-width: 993px) {
+    @content;
+  }
+}
+
+@mixin container($maxWidth, $marginTopBottom) {
+  max-width: $maxWidth;
+  margin: $marginTopBottom auto;
+}
+
+@mixin textStyle(
+  $size,
+  $weight: 400,
+  $letterSpacing: 0,
+  $textAlign: left,
+  $color: black
+) {
+  font-style: $main-font;
+  font-size: $size;
+  font-weight: $weight;
+  letter-spacing: $letterSpacing;
+  text-align: $textAlign;
+  line-height: 1.5;
+  color: $color;
+}

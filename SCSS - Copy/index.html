@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/style.min.css" /> -->
+    <title>W3.CSS Template</title>
+  </head>
+  <body>
+    <header class="header">
+      <span class="header__logo">
+        <a href="#" class="header__logo__link">Gourmet au Catering</a>
+      </span>
+      <nav class="header__nav">
+        <ul class="header__nav__list">
+          <li class="header__nav__list__list-item">
+            <a href="#about" class="header__nav__list__list-item__link"
+              >About</a
+            >
+          </li>
+          <li class="header__nav__list__list-item">
+            <a href="#menu" class="header__nav__list__list-item__link">Menu</a>
+          </li>
+
+          <li class="header__nav__list__list-item">
+            <a href="#contact" class="header__nav__list__list-item__link"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="head-image-wrapper">
+      <img
+        src="./assets/images/hamburger.jpg"
+        alt="Hamburger"
+        class="head-image-wrapper__content"
+      />
+      <span class="head-image-wrapper__span">Le Catering</span>
+    </section>
+    <main class="main">
+      <section class="main__about" id="about">
+        <div class="main__about__image">
+          <img
+            src="./assets/images/tablesetting2.jpg"
+            alt="Table"
+            class="main__about__image__item"
+          />
+        </div>
+        <div class="main__about__text">
+          <h2 class="main__about__text__h2">About Catering</h2>
+          <br />
+          <h5 class="main__about__text__h5">Tradition since 1889</h5>
+          <p class="main__about__text__firstP">
+            The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor
+            sit amet, consectetur adipiscing elit consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.We only use
+            <span class="main__about__text__firstP__span">seasonal</span>
+            ingredients.
+          </p>
+          <p class="main__about__text__secondP">
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum consectetur adipiscing
+            elit, sed do eiusmod temporincididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </section>
+      <hr />
+      <section class="main__menu" id="menu">
+        <div class="main__menu__text">
+          <h2 class="main__menu__text__h2">Our Menu</h2>
+          <br />
+          <h4 class="main__menu__text__h4">Bread Basket</h4>
+          <p class="main__menu__text__p">
+            Assortment of fresh baked fruit breads and muffins 5.50
+          </p>
+          <br />
+          <h4 class="main__menu__text__h4">Honey Almond Granola with Fruits</h4>
+          <p class="main__menu__text__p">
+            Natural cereal of honey toasted oats, raisins, almonds and dates
+            7.00
+          </p>
+          <br />
+          <h4 class="main__menu__text__h4">Belgian Waffle</h4>
+          <p class="main__menu__text__p">
+            Vanilla flavored batter with malted flour 7.50
+          </p>
+          <br />
+          <h4 class="main__menu__text__h4">Scrambled eggs</h4>
+          <p class="main__menu__text__p">
+            Scrambled eggs, roasted red pepper and garlic, with green onions
+            7.50
+          </p>
+          <br />
+          <h4 class="main__menu__text__h4">Blueberry Pancakes</h4>
+          <p class="main__menu__text__p">
+            With syrup, butter and lots of berries 8.50
+          </p>
+        </div>
+        <div class="main__menu__image">
+          <img
+            src="./assets/images/tablesetting.jpg"
+            alt="Table"
+            class="main__menu__image__item"
+          />
+        </div>
+      </section>
+      <hr />
+      <section class="main__contact" id="contact">
+        <h2 class="main__contact__h2">Contact</h2>
+        <br />
+        <p class="main__contact__p">
+          We offer full-service catering for any event, large or small. We
+          understand your needs and we will cater the food to satisfy the
+          biggerst criteria of them all, both look and taste. Do not hesitate to
+          contact us.
+        </p>
+        <address class="main__contact__address">
+          Catering Service, 42nd Living St, 43043 New York, NY
+        </address>
+        <p class="main__contact__p">
+          You can also contact us by phone 00553123-2323 or email
+          catering@catering.com, or you can send us a message here:
+        </p>
+        <form class="main__contact__form">
+          <label for="name" class="main__contact__form__label">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              class="main__contact__form__label__input"
+            />
+          </label>
+          <label for="number" class="main__contact__form__label">
+            <input
+              type="number"
+              name="number"
+              id="number"
+              placeholder="How many people"
+              class="main__contact__form__label__input"
+            />
+          </label>
+          <label for="dateTime" class="main__contact__form__label">
+            <input
+              type="datetime-local"
+              name="dateTime"
+              id="dateTime"
+              placeholder="Name"
+              value="2020-11-16T20:00"
+              class="main__contact__form__label__input"
+            />
+          </label>
+          <label for="text" class="main__contact__form__label">
+            <input
+              type="text"
+              name="text"
+              id="text"
+              placeholder="Message \ Special requirements"
+              class="main__contact__form__label__input"
+            />
+          </label>
+          <button type="submit" class="main__contact__form__button">
+            SEND MESSAGE
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <span class="footer__span"
+        >Powered by
+        <a
+          href="https://www.w3schools.com/w3css/default.asp"
+          class="footer__span__link"
+          >w3.css</a
+        ></span
+      >
+    </footer>
+  </body>
+</html>

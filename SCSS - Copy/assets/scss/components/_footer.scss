@@ -1,0 +1,18 @@
+@import "../variables";
+@import "../mixins";
+
+.footer {
+  padding: 32px 0;
+  background-color: $secondary-color;
+  text-align: center;
+  &__span {
+    display: inline-block;
+    margin: 15px 0;
+    &__link {
+      color: black;
+    }
+    &__link:hover {
+      color: $footer-hover-color;
+    }
+  }
+}

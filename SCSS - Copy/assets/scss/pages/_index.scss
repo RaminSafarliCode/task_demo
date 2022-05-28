@@ -1,0 +1,169 @@
+@import "../variables";
+@import "../mixins";
+
+.head-image-wrapper {
+  max-width: 100%;
+  min-width: 100%;
+  position: relative;
+  &__content {
+    max-width: 100%;
+  }
+  &__span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: $font-size-h1;
+    letter-spacing: 5px;
+    line-height: 1.5;
+    opacity: 0.6;
+    padding: 22px 24px;
+  }
+}
+
+.main {
+  @include container(1100px, 0px);
+  &__about {
+    padding: 64px 0px;
+    @include flexBox(stretch);
+    &__image {
+      width: 50%;
+      padding: 12px 24px;
+      &__item {
+        max-width: 100%;
+      }
+    }
+    &__text {
+      width: 50%;
+      padding: 12px 24px;
+      &__h2 {
+        @include textStyle($font-size-h1, 400, 5px, center);
+        margin: 10px 0;
+      }
+      &__h5 {
+        @include textStyle($font-size-medium, 400, 5px, center);
+        margin: 10px 0;
+      }
+      &__firstP {
+        @include textStyle($font-size-medium, 400, 0px, left);
+        margin: 18px 0;
+        &__span {
+          @include textStyle($font-size-medium, 400, 0px, center);
+          background-color: $secondary-color;
+          display: inline-block;
+          padding: 0 8px;
+        }
+      }
+      &__secondP {
+        @include textStyle(
+          $font-size-medium,
+          400,
+          0px,
+          left,
+          $extra-font-color
+        );
+        margin: 18px 0;
+      }
+    }
+  }
+  &__menu {
+    @extend .main__about;
+    &__text {
+      width: 50%;
+      padding: 12px 24px;
+      &__h2 {
+        @extend .main__about__text__h2;
+      }
+      &__h4 {
+        @include textStyle($font-size-medium-20, 400, 5px, left);
+        margin: 10px 0;
+      }
+      &__p {
+        @include textStyle(
+          $font-size-little,
+          400,
+          0px,
+          left,
+          $extra-font-color
+        );
+        margin: 15px 0;
+      }
+    }
+    &__image {
+      width: 50%;
+      padding: 12px 24px;
+      &__item {
+        width: 100%;
+        opacity: 0.75;
+      }
+    }
+  }
+  &__contact {
+    padding: 64px 16px;
+    &__h2 {
+      @extend .main__about__text__h2;
+      text-align: start;
+    }
+    &__p {
+      @include textStyle($font-size-little, 400, 0, left);
+      margin: 15px 0;
+    }
+    &__address {
+      @include textStyle($font-size-medium, bold, 0, left, $address-font-color);
+      font-style: normal;
+    }
+    &__form {
+      @include flexBox(flex-start, normal);
+      flex-direction: column;
+      &__label {
+        width: 100%;
+        margin: 15px 0;
+        &__input {
+          padding: 16px 8px;
+          width: 100%;
+          border: none;
+          border-bottom: 1px solid $hover-color;
+        }
+      }
+      &__button {
+        margin: 15px 0;
+        padding: 8px 16px;
+        border: none;
+        background-color: $secondary-color;
+        @include textStyle($font-size-little);
+        font-family: $main-font;
+      }
+    }
+  }
+}
+
+::placeholder {
+  font-size: $font-size-little;
+  font-family: $main-font;
+}
+
+@include under601Px() {
+  .main__about__image {
+    display: none;
+  }
+  .main__about__text {
+    width: 100%;
+  }
+}
+
+@include under993Px() {
+  .main__menu {
+    display: block;
+  }
+  .main__menu__text {
+    width: 100%;
+  }
+  .main__menu__image {
+    width: 100%;
+  }
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
